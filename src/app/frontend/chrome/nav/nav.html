@@ -39,11 +39,11 @@ limitations under the License.
   </div>
   <div class="kd-nav-group">
     <kd-nav-item class="kd-nav-group-item"
-                 state="{{::$ctrl.states.workload}}">[[Applications|Workloads group menu entry.]]</kd-nav-item>
+                 state="{{::$ctrl.states.workload}}">[[Workloads|Workloads group menu entry.]]</kd-nav-item>
     <!--kd-nav-item class="kd-nav-item"
                  state="{{::$ctrl.states.daemonSet}}">[[Daemon Sets|Daemon Sets menu entry.]]</kd-nav-item-->
     <kd-nav-item class="kd-nav-item"
-                 state="{{::$ctrl.states.deployment}}">[[Deployments|Deployments menu entry.]]</kd-nav-item>
+                 state="{{::$ctrl.states.deployment}}">[[Deployments (Applications)|Deployments menu entry.]]</kd-nav-item>
     <!--kd-nav-item class="kd-nav-item"
                  state="{{::$ctrl.states.job}}">[[Jobs|Jobs menu entry.]]</kd-nav-item>
     <kd-nav-item class="kd-nav-item"
@@ -53,15 +53,15 @@ limitations under the License.
     <kd-nav-item class="kd-nav-item"
                  state="{{::$ctrl.states.replicationController}}">[[Replication Controllers|Replication Controllers menu entry.]]</kd-nav-item-->
     <kd-nav-item class="kd-nav-item"
-                 state="{{::$ctrl.states.statefulSet}}">[[Stateful Sets|Stateful Sets menu entry.]]</kd-nav-item>
+                 state="{{::$ctrl.states.statefulSet}}">[[Stateful Sets (Databases)|Stateful Sets menu entry.]]</kd-nav-item>
   </div>
   <div class="kd-nav-group">
     <kd-nav-item class="kd-nav-group-item"
-                 state="{{::$ctrl.states.discovery}}">[[Traffic|Discovery and Load Balancing group menu entry.]]</kd-nav-item>
+                 state="{{::$ctrl.states.discovery}}">[[Load Balancers|Discovery and Load Balancing group menu entry.]]</kd-nav-item>
     <kd-nav-item class="kd-nav-item"
-                 state="{{::$ctrl.states.ingress}}">[[Ingress Routes|Ingresses menu entry.]]</kd-nav-item>
+                 state="{{::$ctrl.states.ingress}}">[[Ingress Routes (External)|Ingresses menu entry.]]</kd-nav-item>
     <kd-nav-item class="kd-nav-item"
-                 state="{{::$ctrl.states.service}}">[[Services|Services menu entry.]]</kd-nav-item>
+                 state="{{::$ctrl.states.service}}">[[Services (Internal)|Services menu entry.]]</kd-nav-item>
   </div>
   <div class="kd-nav-group">
     <kd-nav-item class="kd-nav-group-item"
@@ -69,9 +69,9 @@ limitations under the License.
     <kd-nav-item class="kd-nav-item"
                  state="{{::$ctrl.states.configMap}}">[[Config Maps|Config Maps menu entry.]]</kd-nav-item>
     <kd-nav-item class="kd-nav-item"
-                 state="{{::$ctrl.states.persistentVolumeClaim}}">[[Persistent Volume Claims|Persistent Volume Claims menu entry.]]</kd-nav-item>
+                 state="{{::$ctrl.states.secret}}">[[Secrets (Passwords/Keys)|Secrets menu entry.]]</kd-nav-item>
     <kd-nav-item class="kd-nav-item"
-                 state="{{::$ctrl.states.secret}}">[[Secrets|Secrets menu entry.]]</kd-nav-item>
+                 state="{{::$ctrl.states.persistentVolumeClaim}}">[[Volumes (Disks)|Persistent Volume Claims menu entry.]]</kd-nav-item>
   </div>
   <!-- Enabled dynamically if there are third party resources registered in the system.>
   <kd-third-party-resource-nav states="$ctrl.states"></kd-third-party-resource-nav>
